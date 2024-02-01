@@ -316,36 +316,48 @@
   margin-right: 50px;
 }
 
-.content-restaurant-container .choice-button-container .paper-left-container{
+.content-restaurant-container .choice-button-container .paper-container{
   display: none;
   position: relative;
   height: 400px;
   width: 50%;
 }
 
-.content-restaurant-container .choice-button-container .paper-right-container{
-  display: none;
-  position: relative;
-  height: 400px;
-  width: 50%;
-}
-
-.content-restaurant-container .choice-button-container .paper-left-container.display-container{
+.content-restaurant-container .choice-button-container .paper-container.display-container{
   display: block;
 }
 
-.content-restaurant-container .choice-button-container .paper-right-container.display-container-takeaway{
-  display: block;
+.content-restaurant-container .choice-button-container .paper-container .close-paper-button {
+  background-color: var(--middlecolor);
+  border: 0px;
+  font-size: 20px;
+  color: var(--darkcolor);
+  font-weight: 900;
+  position: absolute;
+  right: 100px;
+  top: 30px;
 }
 
-.content-restaurant-container .choice-button-container .paper-left-container #paper-delivery-button,
-.content-restaurant-container .choice-button-container .paper-right-container #paper-takeaway-button {
+.content-restaurant-container .choice-button-container .paper-container .close-paper-button:hover {
+  font-size: 25px;
+  color: var(--specificthingscolor);
+}
+
+.content-restaurant-container .choice-button-container .paper-container #paper-button {
   height: 100%;
   width: 100%;
 }
 
-.content-restaurant-container .choice-button-container .paper-left-container .text-paper-container,
-.content-restaurant-container .choice-button-container .paper-right-container .text-paper-container {
+.content-restaurant-container .choice-button-container .paper-container .text-paper-container-delivery.noshow-delivery {
+  display: none;
+}
+
+.content-restaurant-container .choice-button-container .paper-container .text-paper-container-takeaway.noshow-takeaway {
+  display: none;
+}
+
+.content-restaurant-container .choice-button-container .paper-container .text-paper-container-delivery,
+.content-restaurant-container .choice-button-container .paper-container .text-paper-container-takeaway {
   position: absolute;
   top: 60px;
   left:120px;
@@ -357,11 +369,11 @@
   font-size: 20px;
 }
 
-.content-restaurant-container .choice-button-container .paper-right-container .text-paper-container .takeaway-checkmenu-container a {
+.content-restaurant-container .choice-button-container .paper-container .text-paper-container-takeaway .takeaway-checkmenu-container a {
   text-decoration: none;
 }
 
-.content-restaurant-container .choice-button-container .paper-right-container .text-paper-container .takeaway-checkmenu-container button {
+.content-restaurant-container .choice-button-container .paper-container .text-paper-container-takeaway .takeaway-checkmenu-container button {
   padding: 10px;
   background-color: var(--darkcolor);
   font-weight: 700;
@@ -370,31 +382,31 @@
   color: var(--lightcolor);
 }
 
-.content-restaurant-container .choice-button-container .paper-right-container .text-paper-container .takeaway-checkmenu-container button:hover {
+.content-restaurant-container .choice-button-container .paper-container .text-paper-container-takeaway .takeaway-checkmenu-container button:hover {
   background-color: var(--lightcolor);
   border: 2px solid var(--darkcolor);
   color: var(--specificthingscolor);
 }
 
-.content-restaurant-container .choice-button-container .paper-left-container .text-paper-container span,
-.content-restaurant-container .choice-button-container .paper-right-container .text-paper-container span{
+.content-restaurant-container .choice-button-container .paper-container .text-paper-container-delivery span,
+.content-restaurant-container .choice-button-container .paper-container .text-paper-container-takeaway span{
   font-size: 23px;
   font-weight: bold;
   margin-bottom: 30px;
 }
 
-.content-restaurant-container .choice-button-container .paper-left-container .text-paper-container #del-app,
-.content-restaurant-container .choice-button-container .paper-right-container .text-paper-container #checkmenu {
+.content-restaurant-container .choice-button-container .paper-container .text-paper-container-delivery #del-app,
+.content-restaurant-container .choice-button-container .paper-right-container .text-paper-container-takeaway #checkmenu {
   margin-top: 20px;
 }
 
-.content-restaurant-container .choice-button-container .paper-left-container .text-paper-container .delivery-application-container {
+.content-restaurant-container .choice-button-container .paper-container .text-paper-container-delivery .delivery-application-container {
   display: flex;
   justify-content: space-around;
   width: 60%;
 }
 
-.content-restaurant-container .choice-button-container .paper-left-container .text-paper-container .delivery-application-container img {
+.content-restaurant-container .choice-button-container .paper-container .text-paper-container-delivery .delivery-application-container img {
   height: 50px;
   width: 50px;
 }
@@ -419,21 +431,22 @@
 }
 
 .takeaway-transitioned {
-  transform: translate(20px, 100px);
+  transform: translate(-340px, 100px);
 }
 
 .takeaway-disappearence {
-  transform: translate(-340px, 80px);
+  transform: translate(-340px, 100px);
 }
 
 .delivery-disappearence {
-  transform: translate(340px, -80px);
+  transform: translate(-20px, -100px);
 }
 
 .content-restaurant-container .choice-button-container .choice-button-row .delivery-button .delivery:hover,
 .content-restaurant-container .choice-button-container .choice-button-row .takeaway-button .takeaway:hover {
   background-color: var(--darkcolor);
   color: var(--middlecolor);
+  font-size: 18px;
 }
 
 .content-restaurant-container .choice-button-container .choice-button-row .square-button {
@@ -469,7 +482,7 @@
 
 /* footer */
 
-.content-restaurant-container .content-restaurant-container .footer-container {
+.content-restaurant-container .footer-container {
   border-top: 4px solid var(--darkcolor);
   padding: 50px 0px;
   width: 100%;
@@ -480,9 +493,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 4px solid var(--darkcolor);
   padding: 70px 0px;
-
 }
 
 .content-restaurant-container .footer-container .container .footer-row-container {
