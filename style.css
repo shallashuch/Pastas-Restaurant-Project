@@ -632,45 +632,64 @@
   text-shadow: var(--middlecolor) 1px 0 10px;
 }
 
-.hourelocation-container .body-hel-info-container .hel-info-open h6 {
+.hourelocation-container .body-hel-info-container {
+  margin: 50px 0px;   
+}
+
+.hourelocation-container .body-hel-info-container .body-hel-row .hel-info-open .info-opened {
+  text-align: center;    
+}
+
+.hourelocation-container .body-hel-info-container .body-hel-row .hel-info-open .info-opened h6 {
   font-weight: 600;
   font-size: 20px;
   margin-bottom: 20px;     
 }
 
-
-.hourelocation-container .body-hel-info-container .hel-info-open {
+.hourelocation-container .body-hel-info-container .body-hel-row .hel-info-open {
   max-width: 40%;
-  text-align: center;
-}
-
-.hourelocation-container .body-hel-info-container .address-complete {
-  max-width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.hourelocation-container .body-hel-info-container .address-complete .address-link {
-  margin-bottom: 40px;
+.hourelocation-container .body-hel-info-container .body-hel-row .address-complete {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hourelocation-container .body-hel-info-container .body-hel-row .hel-info-open .address-link {
+  text-align: center;
 }
 
-.hourelocation-container .body-hel-info-container .address-complete .address-link a {
+.hourelocation-container .body-hel-info-container .body-hel-row .hel-info-open .address-link a {
   text-decoration: none;
   color: var(--darkcolor);
   font-weight: 700;
   font-size: 25px;
 }
 
-.hourelocation-container .body-hel-info-container .address-complete .address-maps {
-  max-width: 80%;
-  height: 400px;
+.hourelocation-container .body-hel-info-container .body-hel-row .hel-info-open .address-link a:hover {
+  color: var(--middlecolor);
 }
 
-/* .hourelocation-container .body-hel-info-container .address-complete .address-maps img {
-  max-width: 100%;
-} */
+.hourelocation-container .body-hel-info-container .body-hel-row .hel-info-open .arrow-map-container{
+  height: 50%;
+  width: 50%;
+}
+
+.hourelocation-container .body-hel-info-container .body-hel-row .hel-info-open .arrow-map-container img{
+  height: 100%;
+  width: 100%;
+}
+
+.hourelocation-container .body-hel-info-container .body-hel-row .address-complete .address-maps {
+  min-height: 90%;
+  min-width: 90%;
+}
 
 /* MENU PAGE */
 
