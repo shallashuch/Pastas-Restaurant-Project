@@ -72,13 +72,13 @@
           <div class="title-menu-container">
             <h2>OUR MENUS</h2>
           </div>
-          <div class="body-menu-info-container">
+          <div class="body-menu-pasta-container display-menu">
             <div class="menu-choice-buttons-container">
-              <div class="menu-button-container">
-                <button>PASTA MENU</button>
+              <div class="menu-button-container" onclick="showMenu(pasta)">
+                <button class="active-menu-button menu-pasta-button">PASTA MENU</button>
               </div>
-              <div class="wine-button-container">
-                <button>WINE SELECTION</button>
+              <div class="wine-button-container" onclick="showMenu(wine)">
+                <button class="inactive-menu-button menu-wine-button">WINE SELECTION</button>
               </div>
             </div>
             <div class="menu-pastas-container container">
@@ -136,6 +136,58 @@
                   </div>
                   <div class="col pasta-ingredients-container">
                     Homemade pumpkin ravioli with honey glaze and fresh grated truffle
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="body-menu-wine-container hidden-menu">
+            <div class="menu-choice-buttons-container">
+              <div class="menu-button-container" onclick="showMenu(pasta)">
+                <button class="inactive-menu-button menu-pasta-button">PASTA MENU</button>
+              </div>
+              <div class="wine-button-container" onclick="showMenu(wine)">
+                <button class="active-menu-button menu-wine-button">WINE SELECTION</button>
+              </div>
+            </div>
+            <div class="menu-wine-container container">
+              <div class="menu-wine-title">OUR WINE MENU</div>
+              <div class="menu-typeofwine-container">
+                <div class="row typeofwine-container">
+                  <div class="col wine-title-container">
+                    <div class="dot-slogan"></div>
+                    <div class="wine-title">PASSERINA – Marche Bianco IGT – Belisario</div>
+                  </div>
+                </div>
+                <div class="row typeofwine-container">
+                  <div class="col wine-title-container">
+                    <div class="dot-slogan"></div>
+                    <div class="wine-title">COLLI ORIENTALU DEL FRIULI – Ribolla gialla – Bastianich
+                    </div>
+                  </div>
+                </div>
+                <div class="row typeofwine-container">
+                  <div class="col wine-title-container">
+                    <div class="dot-slogan"></div>
+                    <div class="wine-title">AMARONE DELLA VALPOLICELLA – Flatio</div>
+                  </div>
+                </div>
+                <div class="row typeofwine-container">
+                  <div class="col wine-title-container">
+                    <div class="dot-slogan"></div>
+                    <div class="wine-title">MONTEFALCO ROSSO – Tenute Baldo</div>
+                  </div>
+                </div>
+                <div class="row typeofwine-container">
+                  <div class="col wine-title-container">
+                    <div class="dot-slogan"></div>
+                    <div class="wine-title">CHIANTI RISERVA – Duca di Saragano</div>
+                  </div>
+                </div>
+                <div class="row typeofwine-container">
+                  <div class="col wine-title-container">
+                    <div class="dot-slogan"></div>
+                    <div class="wine-title">PROSECCO – Le Contesse – Prosecco Treviso DOC</div>
                   </div>
                 </div>
               </div>

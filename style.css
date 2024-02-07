@@ -21,14 +21,32 @@
 
 .content-restaurant-container {
   background-color: var(--lightcolor);
+  /* width: 100%; */
   width: 90%;
   display: flex;
   flex-direction: column;
+  border-bottom-left-radius: 65px;
+  border-bottom-right-radius: 65px;
 }
+
+/* .content-restaurant-container:before {
+  content: "";
+  display: block;
+  position:fixed;
+  border-width: 60px;
+  border-image: url(./images/prova.png);
+  z-index: 9999;
+  border-image-slice: 110;
+  border-style: solid;
+  border-image-repeat: stretch;
+  width: 100%;
+  height: 100%;
+} */
 
 .body-container .content-restaurant-container .fixed-blue-container{
   height: 60px;
   width: 100%;
+  /* background-color: var(--lightcolor); */
   background-color: var(--darkcolor);
   z-index: 1000;
   position: fixed;
@@ -41,8 +59,10 @@
   background-color: var(--lightcolor);
   border-bottom: 4px solid var(--darkcolor);
   position: fixed !important;
+  /* width: 93%; */
   width: 90%;
   top:60px !important;
+  /* left:55px; */
   padding: 0px !important;
   z-index: 1000;
 }
@@ -480,7 +500,7 @@
 }
 
 
-/* footer */
+/* FOOTER */
 
 .content-restaurant-container .footer-container {
   border-top: 4px solid var(--darkcolor);
@@ -584,7 +604,7 @@
 
 .hourelocation-container .title-hel-info-container{
   min-width: 100%;
-  height: 500px;
+  height: 520px;
   position: relative;
   display: flex;
   align-items: center;
@@ -652,7 +672,7 @@
   max-width: 100%;
 } */
 
-/* Menu page */
+/* MENU PAGE */
 
 .menu-container {
   display: flex;
@@ -663,7 +683,7 @@
 
 .menu-container  .title-menu-container{
   min-width: 100%;
-  height: 350px;
+  height: 520px;
   position: relative;
   display: flex;
   align-items: center;
@@ -690,7 +710,43 @@
   text-shadow: var(--middlecolor) 1px 0 10px;
 }
 
-.menu-container .body-menu-info-container{
+.menu-container .body-menu-pasta-container .menu-choice-buttons-container,
+.menu-container .body-menu-wine-container .menu-choice-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+}
+
+.menu-container .body-menu-pasta-container .menu-choice-buttons-container button:hover,
+.menu-container .body-menu-wine-container .menu-choice-buttons-container button:hover {
+  background-color: var(--specificthingscolor);
+  border: 2px solid var(--specificthingscolor);
+  color: var(--lightcolor);
+}
+
+.active-menu-button {
+  padding: 10px;
+  background-color: var(--darkcolor);
+  font-weight: 700;
+  border: 2px solid var(--darkcolor);
+  border-radius: 5px;
+  color: var(--middlecolor);
+} 
+
+.inactive-menu-button {
+  border: 2px solid var(--darkcolor);
+  padding: 10px;
+  background-color: var(--lightcolor);
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.menu-container .body-menu-pasta-container .menu-pastas-container,
+.menu-container .body-menu-wine-container .menu-wine-container {
+  margin-top:60px;
+}
+
+.display-menu {
   min-width: 100%;
   display: flex;
   flex-direction: column;
@@ -699,60 +755,45 @@
   margin-top: 40px;
 }
 
-.menu-container .body-menu-info-container .menu-choice-buttons-container {
-  display: flex;
-  justify-content: space-between;
-  width: 25%;
+.hidden-menu {
+  display: none;
 }
 
-.menu-container .body-menu-info-container .menu-choice-buttons-container .menu-button-container button,
-.menu-container .body-menu-info-container .menu-choice-buttons-container .wine-button-container button {
-  border: 2px solid var(--darkcolor);
-  padding: 10px;
-  background-color: var(--lightcolor);
-  font-weight: 600;
-}
-
-.menu-container .body-menu-info-container .menu-choice-buttons-container .menu-button-container button:hover,
-.menu-container .body-menu-info-container .menu-choice-buttons-container .wine-button-container button:hover {
-  border: 2px solid var(--specificthingscolor);
-  color: var(--middlecolor);    
-}
-
-.menu-container .body-menu-info-container .menu-pastas-container {
-  margin-top:60px;
-}
-
-.menu-container .body-menu-info-container .menu-pastas-container .menu-pastas-title {
+.menu-container .body-menu-pasta-container .menu-pastas-container .menu-pastas-title,
+.menu-container .body-menu-wine-container .menu-wine-container .menu-wine-title {
   font-weight: 600;
   font-size: 30px;
   margin-left: 20px;
 }
 
-.menu-container .body-menu-info-container .menu-pastas-container .menu-typeofpasta-container {
+.menu-container .body-menu-pasta-container .menu-pastas-container .menu-typeofpasta-container,
+.menu-container .body-menu-wine-container .menu-wine-container .menu-typeofwine-container {
   margin-top: 40px;
   padding-left: 30px;
 }
 
-.menu-container .body-menu-info-container .menu-pastas-container .menu-typeofpasta-container .typeofpasta-container {
+.menu-container .body-menu-pasta-container .menu-pastas-container .menu-typeofpasta-container .typeofpasta-container,
+.menu-container .body-menu-wine-container .menu-wine-container .menu-typeofwine-container .typeofwine-container {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
 }
 
-.menu-container .body-menu-info-container .menu-pastas-container .menu-typeofpasta-container .typeofpasta-container .pasta-title-container{
+.menu-container .body-menu-pasta-container .menu-pastas-container .menu-typeofpasta-container .typeofpasta-container .pasta-title-container,
+.menu-container .body-menu-wine-container .menu-wine-container .menu-typeofwine-container .typeofwine-container .wine-title-container{
   font-size: 20px;
   margin-bottom: 6px;
   display: flex;
   align-items: center;
 }
 
-.menu-container .body-menu-info-container .menu-pastas-container .menu-typeofpasta-container .typeofpasta-container .pasta-ingredients-container{
+.menu-container .body-menu-pasta-container .menu-pastas-container .menu-typeofpasta-container .typeofpasta-container .pasta-ingredients-container{
   font-size: 15px;
   font-style: italic;
 }
 
-.menu-container .body-menu-info-container .menu-pastas-container .menu-typeofpasta-container .typeofpasta-container .pasta-title-container .dot-slogan {
+.menu-container .body-menu-pasta-container .menu-pastas-container .menu-typeofpasta-container .typeofpasta-container .pasta-title-container .dot-slogan,
+.menu-container .body-menu-wine-container .menu-wine-container .menu-typeofwine-container .typeofwine-container .wine-title-container .dot-slogan {
   width:5px;
   height: 5px;
   border-radius: 50%;
@@ -798,12 +839,22 @@
   height: 100%;
   padding: 0px;
   object-fit: cover;
+  transition: all 200ms ease-in-out;
+}
+
+.menu-container .photo-menu-container .photo-menu-row-container .col-photo-container .photo-row-container img:hover {
+  transform:scale(1.5);
 }
 
 .menu-container .photo-menu-container .photo-menu-row-container .col-photo-container .photo-doublerow-container img{
   width: 50%;
   height: 70%;
   padding: 0px;
+  transition: all 200ms ease-in-out;
+}
+
+.menu-container .photo-menu-container .photo-menu-row-container .col-photo-container .photo-doublerow-container img:hover{
+  transform:scale(2);
 }
 
 /* OUR STORY */
@@ -816,7 +867,7 @@
 
 .ourstory-container  .title-ourstory-container{
   min-width: 100%;
-  height: 460px;
+  height: 520px;
   position: relative;
   display: flex;
   align-items: center;
@@ -896,6 +947,49 @@
   border-image: url(./images/45degreecorner.png) 190 stretch;
 }
 
-.ourstory-experience-container .ourstory-experience-container .experience-part {
+.ourstory-experience-container .experience-container .experience-part {
   margin-bottom: 20px;
+}
+
+.review-our-story-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.review-our-story-container h2{
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.review-our-story-container .review-container{
+  background-color: #f5bba4;
+  box-shadow: 10px 5px 5px var(--middlecolor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0px;
+  width: 70%;
+}
+
+.review-our-story-container .review-container .body-review-container{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.review-our-story-container .review-container .body-review-container .author-review{
+  text-align: right;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.review-our-story-container .review-container .body-review-container .content-review{
+  font-size: 21px;
+  font-style: italic;
 }

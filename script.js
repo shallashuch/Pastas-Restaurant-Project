@@ -108,3 +108,25 @@ function closePaper() {
     paperTakeAway.classList.remove('noshow-takeaway');
   }
 }
+
+// WINE AND FOOD MENU
+
+const pastaMenu = document.querySelector('.body-menu-pasta-container');
+const wineMenu = document.querySelector('.body-menu-wine-container');
+
+const pasta = 'pasta';
+const wine = 'wine';
+
+function showMenu(action) {
+  if (action === wine) {
+    pastaMenu.classList.remove('display-menu');
+    pastaMenu.classList.add('hidden-menu');
+    wineMenu.classList.remove('hidden-menu');
+    wineMenu.classList.add('display-menu');
+  } else {
+    wineMenu.classList.remove('display-menu');
+    wineMenu.classList.add('hidden-menu');
+    pastaMenu.classList.remove('hidden-menu');
+    pastaMenu.classList.add('display-menu');
+  }
+}
