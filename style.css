@@ -164,7 +164,7 @@
   font-size: 40px;
   color: var(--middlecolor);
   font-weight: 900;
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 .body-container .content-restaurant-container .modal .modal-dialog .modal-button{
@@ -188,16 +188,41 @@ body.modal-open {
 }
 
 .body-container .content-restaurant-container .modal .modal-dialog .modal-content .modal-form-container .form-container .form-row-container{
-  background-color: pink;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: #2B2A4C;
+  padding: 40px 0px;
 }
 
-.body-container .content-restaurant-container .modal .modal-dialog .modal-content .modal-form-container .form-container .form-row-container .when-container{
+.body-container .content-restaurant-container .modal .modal-dialog .modal-content .modal-form-container .form-container .form-row-container .num-people-container,
+.body-container .content-restaurant-container .modal .modal-dialog .modal-content .modal-form-container .form-container .form-row-container .when-date-container,
+.body-container .content-restaurant-container .modal .modal-dialog .modal-content .modal-form-container .form-container .form-row-container .when-hour-container,
+.body-container .content-restaurant-container .modal .modal-dialog .modal-content .modal-form-container .form-container .form-row-container .info-email-container{
+  margin-bottom: 30px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  width: 40%;
+  color: var(--lightcolor);
+  font-size: 18px;
+}
+
+.body-container .content-restaurant-container .modal .modal-dialog .modal-content .modal-form-container .form-container .form-row-container .num-people-container label,
+.body-container .content-restaurant-container .modal .modal-dialog .modal-content .modal-form-container .form-container .form-row-container .info-email-container label,
+.body-container .content-restaurant-container .modal .modal-dialog .modal-content .modal-form-container .form-container .form-row-container .when-date-container label,
+.body-container .content-restaurant-container .modal .modal-dialog .modal-content .modal-form-container .form-container .form-row-container .when-hour-container label {
+  text-align: left;
+  padding: 0px;
+}
+
+.body-container .content-restaurant-container .modal .modal-dialog .modal-content .button-modal-container button {
+  padding: 10px;
+  background-color: var(--middlecolor);
+  font-weight: 700;
+  border: 2px solid var(--middlecolor);
+  border-radius: 5px;
+  color: var(--darkcolor);
 }
 
 /* INDEX */
