@@ -250,7 +250,7 @@
 
 .content-restaurant-container .mix-photo-container .mix-photo {
   transition: transform 0.5s ease-in-out;
-  max-height: 40%;
+  min-height: 410px;
   max-width: 60%;
   overflow: hidden;
   margin-bottom: 30px;
@@ -956,7 +956,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 30px;
+  margin-bottom: 80px;
 }
 
 .review-our-story-container h2{
@@ -973,10 +973,17 @@
   justify-content: center;
   padding: 40px 0px;
   width: 70%;
+  height: 300px;
 }
 
 .review-our-story-container .review-container .body-review-container{
   width: 70%;
+  display: none;
+}
+
+
+.review-our-story-container .review-container .body-review-container.active-review {
+  display: block;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -992,4 +999,29 @@
 .review-our-story-container .review-container .body-review-container .content-review{
   font-size: 21px;
   font-style: italic;
+}
+
+.review-our-story-container .review-container .review-arrow {
+  position: absolute;
+  width: auto;
+  transition: 0.6s ease;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 16px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  color: var(--darkcolor);
+}
+
+.review-our-story-container .review-container .review-arrow:hover {
+  color: var(--specificthingscolor);
+}
+
+.review-our-story-container .review-container #prev-review-arrow{
+  left:180px;
+}
+
+.review-our-story-container .review-container #next-review-arrow{
+  right:180px;
 }

@@ -1,4 +1,4 @@
-// SLIDING IMAGES
+// SLIDING IMAGES -HOMEPAGE
 
 const slideImages = document.querySelectorAll('.slideimages');
 const slideDot = document.querySelectorAll('.dot');
@@ -44,7 +44,7 @@ function nextSlide() {
 }
 
 
-// SHOW BUTTON DELIVERY-TAKEAWAY CONTENT
+// SHOW BUTTON DELIVERY-TAKEAWAY CONTENT -HOMEPAGE
 const deliveryBtnContainer = document.querySelector('.delivery-button');
 const takeAwayBtnContainer = document.querySelector('.takeaway-button');
 const paperContainer = document.querySelector('.paper-container');
@@ -109,7 +109,7 @@ function closePaper() {
   }
 }
 
-// WINE AND FOOD MENU
+// WINE AND FOOD MENU -MENU PAGE
 
 const pastaMenu = document.querySelector('.body-menu-pasta-container');
 const wineMenu = document.querySelector('.body-menu-wine-container');
@@ -129,4 +129,40 @@ function showMenu(action) {
     pastaMenu.classList.remove('hidden-menu');
     pastaMenu.classList.add('display-menu');
   }
+}
+
+// SLIDING REVIEW -OUR STORY PAGE
+
+const slideReview = document.querySelectorAll('.body-review-container');
+let reviewIndex = 0;
+
+firstSlide();
+
+function firstSlide() {
+  if (slideReview.length > 0) {
+    slideReview[reviewIndex].classList.add('active-review');
+  }  
+}
+
+function showReview(index) {
+  if(index >= slideReview.length) {
+    reviewIndex = 0;
+  } else if (index < 0) {
+    reviewIndex = slideReview.length -1;
+  }
+
+  slideReview.forEach(review => {
+    review.classList.remove('active-review');
+  })
+  slideReview[reviewIndex].classList.add('active-review');
+}
+
+function prevReview() {
+  reviewIndex--;
+  showReview(reviewIndex);
+}
+
+function nextReview() {
+  reviewIndex++;
+  showReview(reviewIndex);
 }
