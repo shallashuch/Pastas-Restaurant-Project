@@ -60,7 +60,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="reservation-button">
+                  <div class="reservation-button" data-open="reservationModal" onclick="renderModal()">
                     <p>RESERVATIONS</p>
                   </div>
                 </div>
@@ -68,6 +68,57 @@
             </div>
           </div>
         </nav>
+
+        <div class="modal hidden-modal" id="reservationModal">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-button">
+                <button class="close-modal" aria-label="close modal" onclick="closeModal()">X</button>
+              </div>
+              <h1>RESERVATIONS</h1>
+              <form action="" class="modal-form-container">
+                <div class="form-container container">
+                  <div class="row form-row-container">
+                    <div class="col num-people-container">
+                      <label for="number-of-people">Number of people:</label>
+                      <input type="number" list="numOfPeople" required>
+                      <datalist id="numOfPeople">
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10"></option>
+                        <option value="10+"></option>
+                      </datalist>
+                    </div>
+                    <div class="col when-container">
+                      <div class="row">
+                        <label for="data">Date</label>
+                        <input type="date" required>
+                      </div>
+                      <div class="row">
+                        <label for="time">Time</label>
+                        <input type="time" required>
+                      </div>
+                    </div>
+                    <div class="col info-email-container">
+                      <label for="email">Insert your email address:</label>
+                      <input type="email" pattern=".+@example\.com" required>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+
+
         <div class="identity-container">
           <div class="logo-identity">
             <img src="./images/logo.png" alt="Logo Pastas" />

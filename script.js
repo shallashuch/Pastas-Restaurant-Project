@@ -1,3 +1,19 @@
+// MODALS
+
+const modal = document.getElementById('reservationModal')
+
+function renderModal() {
+  modal.classList.remove('hidden-modal');
+  modal.classList.add('display-modal');
+  document.body.classList.add('modal-open');
+}
+
+function closeModal() {
+  modal.classList.remove('display-modal');
+  modal.classList.add('hidden-modal');
+  document.body.classList.remove('modal-open');
+}
+
 // SLIDING IMAGES -HOMEPAGE
 
 const slideImages = document.querySelectorAll('.slideimages');
