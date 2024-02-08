@@ -22,54 +22,34 @@
     <div class="body-container">
       <div class="content-restaurant-container">
         <div class="fixed-blue-container"></div>
-<!-- NAVBAR -->
+        <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg">
-          <div class="body-navbar-container container-fluid">
-            <div class="navbar-item-container">
-              <a href="./">
-                <img
-                  src="./images/logo.png"
-                  alt="Logo Pastas"
-                  id="logoPastas"
-                />
-              </a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span
-                  class="navbar-toggler-icon FORSE ANCHE ALTROOOO!!!!"
-                ></span>
-              </button>
-              <div class="collapse navbar-collapse">
-                <div class="navbar-collapse-container">
-                  <div class="item-container">
-                    <div class="navbar-list">
-                      <div class="nav-item">
-                        <a href="./hour&location.html" class="nav-link">Hours & Location</a>
-                      </div>
-                      <div class="nav-item">
-                        <a href="./menu.html" class="nav-link">Menu</a>
-                      </div>
-                      <div class="nav-item">
-                        <a href="./ourstory.html" class="nav-link">Our story</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="reservation-button" data-open="reservationModal" onclick="renderModal()">
-                    <p>RESERVATIONS</p>
-                  </div>
-                </div>
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="./images/logo.png" alt="Logo Pastas" id="logoPastas" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="./hour&location.html">Hours & Location</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./ourstory.html">Our Story</a>
+                </li>
+              </ul>
+              <div class="reservation-button" data-open="reservationModal" onclick="renderModal()">
+                <p>RESERVATIONS</p>
               </div>
             </div>
           </div>
         </nav>
-<!-- MODAL -->
+        <!-- MODAL -->
         <div class="modal hidden-modal" id="reservationModal">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -152,7 +132,7 @@
             </div>
           </div>
         </div>  
-<!-- MENU INTRO -->
+        <!-- MENU INTRO -->
         <div class="menu-container">
           <div class="title-menu-container">
             <h2>OUR MENUS</h2>
@@ -166,7 +146,7 @@
                 <button class="inactive-menu-button menu-wine-button">WINE SELECTION</button>
               </div>
             </div>
-<!-- FOOD MENU -->
+            <!-- FOOD MENU -->
             <div class="menu-pastas-container container">
               <div class="menu-pastas-title">OUR PASTA MENU</div>
               <div class="menu-typeofpasta-container">
@@ -227,7 +207,7 @@
               </div>
             </div>
           </div>
-<!-- WINE MENU -->
+          <!-- WINE MENU -->
           <div class="body-menu-wine-container hidden-menu">
             <div class="menu-choice-buttons-container">
               <div class="menu-button-container" onclick="showMenu(pasta)">
@@ -280,7 +260,7 @@
               </div>
             </div>
           </div>
-<!-- PHOTO MENU -->
+          <!-- PHOTO MENU -->
           <div class="photo-menu-container container">
             <div class=" raw photo-menu-row-container">
               <div class="col-4 col-photo-container">
@@ -312,7 +292,7 @@
             </div>
           </div>
         </div>
-<!-- FOOTER -->
+        <!-- FOOTER -->
         <div class="footer-container">
           <footer id="footer" class="container">
             <div class="row footer-row-container">

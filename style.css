@@ -59,30 +59,49 @@
   background-color: var(--lightcolor);
   border-bottom: 4px solid var(--darkcolor);
   position: fixed !important;
-  /* width: 93%; */
   width: 90%;
   top:60px !important;
-  /* left:55px; */
   padding: 0px !important;
   z-index: 1000;
+  /* width: 93%; */
+  /* left:55px; */
 }
 
-.body-container .content-restaurant-container .navbar .navbar-item-container {
-  margin-left: 0px;
-  margin-right: 0px;
-  width: 100%;
-  display: flex;
-  position: relative;
+.body-container .content-restaurant-container .navbar .navbar-collapse.activescroll {
+  font-size: 15px;
+  transition: all 300ms ease-in;
+}
+
+.body-container .content-restaurant-container .navbar #logoPastas.activescroll-logo {
+  height: 50px;
+  width: 50px;
+  transition: all 300ms ease-in;
+}
+
+.body-container .content-restaurant-container .navbar .navbar-collapse .reservation-button.activescroll-btn {
+  padding: 4px;
+  border-width: 10px;
+  transition: all 100ms ease-in;
 }
 
 .body-container .content-restaurant-container .navbar .navbar-toggler {
   position:absolute;
   top: 30px;
   right: 40px;
+  border: 0px;
 }
 
-.body-container .content-restaurant-container .navbar .navbar-collapse-container {
-  display: flex;
+.body-container .content-restaurant-container .navbar .navbar-toggler {
+  color: var(--middlecolor) !important;
+  font-weight: 900;
+}
+
+.body-container .content-restaurant-container .navbar .navbar-toggler.activescroll-hamburger {
+  top: 7px;
+  transition: all 300ms ease-in;
+}
+
+.body-container .content-restaurant-container .navbar .navbar-collapse {
   flex-direction: row;
   justify-content: end;
   width: 100%;
@@ -95,21 +114,11 @@
   width: 100px;
 }
 
-.body-container .content-restaurant-container .navbar .navbar-collapse-container .item-container .navbar-list {
-  display: flex;
-  width: 100%;
-  justify-content: end;
-  height: 100%;
+.body-container .content-restaurant-container .navbar .navbar-collapse .nav-item{
+  margin: 0px 20px;
 }
 
-.body-container .content-restaurant-container .navbar .navbar-collapse-container .item-container .navbar-list .nav-item{
-  margin-right: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.body-container .content-restaurant-container .navbar .navbar-collapse-container .reservation-button {
+.body-container .content-restaurant-container .navbar .navbar-collapse .reservation-button {
  margin-left: 10px;
  padding: 10px;
  display: flex;
@@ -121,7 +130,7 @@
  cursor: pointer;
 }
 
-.body-container .content-restaurant-container .navbar .navbar-collapse-container .reservation-button p {
+.body-container .content-restaurant-container .navbar .navbar-collapse .reservation-button p {
   margin: 0px;
 }
 

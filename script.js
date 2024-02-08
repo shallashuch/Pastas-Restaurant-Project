@@ -1,3 +1,17 @@
+// SCROLLING NAVBAR
+
+window.addEventListener('scroll', function() {
+  let navbar = document.querySelector('.navbar-collapse');
+  let logo = document.getElementById('logoPastas');
+  let reservationBtn = document.querySelector('.reservation-button');
+  let hamburgerMenu = document.querySelector('.navbar-toggler');
+
+  navbar.classList.toggle("activescroll", window.scrollY > 50);
+  logo.classList.toggle("activescroll-logo", window.scrollY > 50);
+  reservationBtn.classList.toggle("activescroll-btn", window.scrollY > 50);
+  hamburgerMenu.classList.toggle("activescroll-hamburger", window.scrollY > 50);
+});
+
 // MODALS
 
 const modal = document.getElementById('reservationModal')

@@ -22,54 +22,34 @@
     <div class="body-container">
       <div class="content-restaurant-container">
         <div class="fixed-blue-container"></div>
-<!-- NAVBAR -->
+        <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg">
-          <div class="body-navbar-container container-fluid">
-            <div class="navbar-item-container">
-              <a href="./">
-                <img
-                  src="./images/logo.png"
-                  alt="Logo Pastas"
-                  id="logoPastas"
-                />
-              </a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span
-                  class="navbar-toggler-icon FORSEANCHEALTROOOO!!!!"
-                ></span>
-              </button>
-              <div class="collapse navbar-collapse">
-                <div class="navbar-collapse-container">
-                  <div class="item-container">
-                    <div class="navbar-list">
-                      <div class="nav-item">
-                        <a href="./hour&location.html" class="nav-link">Hours & Location</a>
-                      </div>
-                      <div class="nav-item">
-                        <a href="./menu.html" class="nav-link">Menu</a>
-                      </div>
-                      <div class="nav-item">
-                        <a href="./ourstory.html" class="nav-link">Our story</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="reservation-button" data-open="reservationModal" onclick="renderModal()">
-                    <p>RESERVATIONS</p>
-                  </div>
-                </div>
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="./images/logo.png" alt="Logo Pastas" id="logoPastas" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="./hour&location.html">Hours & Location</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./ourstory.html">Our Story</a>
+                </li>
+              </ul>
+              <div class="reservation-button" data-open="reservationModal" onclick="renderModal()">
+                <p>RESERVATIONS</p>
               </div>
             </div>
           </div>
         </nav>
-<!-- MODAL -->
+        <!-- MODAL -->
         <div class="modal hidden-modal" id="reservationModal">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -152,7 +132,7 @@
             </div>
           </div>
         </div>  
- <!--IDENTITY  -->
+        <!--IDENTITY  -->
         <div class="identity-container">
           <div class="logo-identity">
             <img src="./images/logo.png" alt="Logo Pastas" />
@@ -173,7 +153,7 @@
             <div class="item-slogan"><p>Pasta</p></div>
           </div>
         </div>
-<!-- INTRO MENU -->
+        <!-- INTRO MENU -->
         <div class="menu-index-container container">
           <div class="row">
             <div class="col image-menu-container">
@@ -207,7 +187,7 @@
             </div>
           </div>
         </div>
-<!-- SLIDING IMAGES -->
+        <!-- SLIDING IMAGES -->
         <div class="mix-photo-container">
           <div class="mix-photo">
             <img class="slideimages" src="./images/location4.jpeg" alt="Image1" />
@@ -224,7 +204,7 @@
             <span class="dot" onclick="currentSlide(3)"></span>
           </div>
         </div>
-<!-- DELIVERY-TAKE AWAY -->
+        <!-- DELIVERY-TAKE AWAY -->
         <div class="container choice-button-container">
           <div class="row choice-button-row">
             <div class="col delivery-button choice-button">
@@ -261,7 +241,7 @@
             </div>
           </div>
         </div>
-<!-- FOOTER -->
+        <!-- FOOTER -->
         <div class="footer-container">
           <footer id="footer" class="container">
             <div class="row footer-row-container">
