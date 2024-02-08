@@ -154,10 +154,10 @@
 
 .body-container .content-restaurant-container .modal .modal-dialog .modal-content{
   background-color: rgba(43, 42, 76, 0);
-  padding: 20px;
   border: 0px;
   text-align: center;
   color: var(--lightcolor);
+  margin-bottom: 50px;
 }
 
 .body-container .content-restaurant-container .modal .modal-dialog .modal-content h1{
@@ -193,7 +193,7 @@ body.modal-open {
   align-items: center;
   justify-content: center;
   color: #2B2A4C;
-  padding: 40px 0px;
+  padding: 30px 0px;
 }
 
 .body-container .content-restaurant-container .modal .modal-dialog .modal-content .modal-form-container .form-container .form-row-container .num-people-container,
@@ -208,12 +208,13 @@ body.modal-open {
   font-size: 18px;
 }
 
-.body-container .content-restaurant-container .modal .modal-dialog .modal-content .modal-form-container .form-container .form-row-container .num-people-container label,
-.body-container .content-restaurant-container .modal .modal-dialog .modal-content .modal-form-container .form-container .form-row-container .info-email-container label,
-.body-container .content-restaurant-container .modal .modal-dialog .modal-content .modal-form-container .form-container .form-row-container .when-date-container label,
-.body-container .content-restaurant-container .modal .modal-dialog .modal-content .modal-form-container .form-container .form-row-container .when-hour-container label {
+.body-container .content-restaurant-container .modal .modal-dialog .modal-content .modal-form-container .form-container .form-row-container label {
   text-align: left;
-  padding: 0px;
+}
+
+.body-container .content-restaurant-container .modal .modal-dialog .modal-content .modal-form-container .form-container .form-row-container input {
+  padding: 10px;
+  margin:0px;
 }
 
 .body-container .content-restaurant-container .modal .modal-dialog .modal-content .button-modal-container button {
@@ -643,6 +644,11 @@ body.modal-open {
   width: 50px;
   height: 50px;
   color: var(--middlecolor);
+} 
+
+.content-restaurant-container .footer-container #footer .follow-container svg:hover,
+.content-restaurant-container .footer-container #footer .contact-container svg:hover {
+  color: var(--specificthingscolor);
 } 
 
 .content-restaurant-container .footer-container #footer .follow-container .facebook-container {

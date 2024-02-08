@@ -15,13 +15,14 @@
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,800&display=swap"
       rel="stylesheet"
-    />
+    /> 
     <title>Pastas restaurant</title>
   </head>
   <body>
     <div class="body-container">
       <div class="content-restaurant-container">
         <div class="fixed-blue-container"></div>
+<!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg">
           <div class="body-navbar-container container-fluid">
             <div class="navbar-item-container">
@@ -60,7 +61,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="reservation-button">
+                  <div class="reservation-button" data-open="reservationModal" onclick="renderModal()">
                     <p>RESERVATIONS</p>
                   </div>
                 </div>
@@ -68,6 +69,90 @@
             </div>
           </div>
         </nav>
+<!-- MODAL -->
+        <div class="modal hidden-modal" id="reservationModal">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-button">
+                <button class="close-modal" aria-label="close modal" onclick="closeModal()">X</button>
+              </div>
+              <h1>RESERVATIONS</h1>
+              <form action="" class="modal-form-container">
+                <div class="form-container container">
+                  <div class="row form-row-container">
+                    <div class="col info-email-container">
+                      <label for="email">Insert your email address:</label>
+                      <input type="email" pattern=".+@example\.com" placeholder="something@example.com">
+                    </div>
+                    <div class="col num-people-container">
+                      <label for="number-of-people">Number of people:</label>
+                      <input type="number" list="numOfPeople" placeholder="Number of people" required>
+                      <datalist id="numOfPeople">
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10"></option>
+                        <option value="10+"></option>
+                      </datalist>
+                    </div>
+                    <div class="col when-date-container">
+                      <label for="data">Date</label>
+                      <input type="date" required>                    
+                    </div>
+                    <div class="col when-hour-container">
+                      <label for="time">Time</label>
+                      <input type="time" list="possibleTime" required>
+                      <datalist id="possibleTime">
+                        <option value="11:00"></option>
+                        <option value="11:15"></option>
+                        <option value="11:30"></option>
+                        <option value="11:45"></option>
+                        <option value="12:00"></option>
+                        <option value="12:15"></option>
+                        <option value="12:30"></option>
+                        <option value="12:45"></option>
+                        <option value="13:00"></option>
+                        <option value="13:15"></option>
+                        <option value="13:30"></option>
+                        <option value="13:45"></option>
+                        <option value="14:00"></option>
+                        <option value="14:15"></option>
+                        <option value="14:30"></option>
+                        <option value="14:45"></option>
+                        <option value="15:00"></option>
+                        <option value="15:15"></option>
+                        <option value="15:30"></option>
+                        <option value="15:45"></option>
+                        <option value="16:00"></option>
+                        <option value="16:15"></option>
+                        <option value="16:30"></option>
+                        <option value="16:45"></option>
+                        <option value="17:00"></option>
+                        <option value="17:15"></option>
+                        <option value="17:30"></option>
+                        <option value="17:45"></option>
+                        <option value="18:00"></option>
+                        <option value="18:15"></option>
+                        <option value="18:30"></option>
+                        <option value="18:45"></option>
+                      </datalist>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="button-modal-container">
+                <button onclick="thankyouMessage()">FIND A TABLE</button>
+              </div>
+            </div>
+          </div>
+        </div>  
+<!-- INTRO OUR STORY -->
         <div class="ourstory-container">
           <div class="title-ourstory-container">
             <h2>OUR STORY</h2>
@@ -108,6 +193,7 @@
             </div>
           </div>
         </div>
+<!-- REVIEW CUSTOMER -->
         <div class="review-our-story-container">
           <h2>Our customer said..</h2>
           <div class="review-container">
@@ -139,6 +225,7 @@
             <div id="next-review-arrow" class="review-arrow" onclick="nextReview()">&#10095;</div>  
           </div>
         </div>
+<!-- FOOTER -->
         <div class="footer-container">
           <footer id="footer" class="container">
             <div class="row footer-row-container">

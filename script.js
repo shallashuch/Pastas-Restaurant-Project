@@ -14,6 +14,10 @@ function closeModal() {
   document.body.classList.remove('modal-open');
 }
 
+function thankyouMessage() {
+  alert("Thank you for your request :) You'll receive an email soon for the confirmation!")
+}
+
 // SLIDING IMAGES -HOMEPAGE
 
 const slideImages = document.querySelectorAll('.slideimages');

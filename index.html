@@ -22,6 +22,7 @@
     <div class="body-container">
       <div class="content-restaurant-container">
         <div class="fixed-blue-container"></div>
+<!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg">
           <div class="body-navbar-container container-fluid">
             <div class="navbar-item-container">
@@ -68,7 +69,7 @@
             </div>
           </div>
         </nav>
-
+<!-- MODAL -->
         <div class="modal hidden-modal" id="reservationModal">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -81,11 +82,11 @@
                   <div class="row form-row-container">
                     <div class="col info-email-container">
                       <label for="email">Insert your email address:</label>
-                      <input type="email" pattern=".+@example\.com" required>
+                      <input type="email" pattern=".+@example\.com" placeholder="something@example.com">
                     </div>
                     <div class="col num-people-container">
                       <label for="number-of-people">Number of people:</label>
-                      <input type="number" list="numOfPeople" required>
+                      <input type="number" list="numOfPeople" placeholder="Number of people" required>
                       <datalist id="numOfPeople">
                         <option value="1"></option>
                         <option value="2"></option>
@@ -146,14 +147,12 @@
                 </div>
               </form>
               <div class="button-modal-container">
-                <button>FIND A TABLE</button>
+                <button onclick="thankyouMessage()">FIND A TABLE</button>
               </div>
             </div>
           </div>
-        </div>
-
-
-
+        </div>  
+ <!--IDENTITY  -->
         <div class="identity-container">
           <div class="logo-identity">
             <img src="./images/logo.png" alt="Logo Pastas" />
@@ -174,6 +173,7 @@
             <div class="item-slogan"><p>Pasta</p></div>
           </div>
         </div>
+<!-- INTRO MENU -->
         <div class="menu-index-container container">
           <div class="row">
             <div class="col image-menu-container">
@@ -207,6 +207,7 @@
             </div>
           </div>
         </div>
+<!-- SLIDING IMAGES -->
         <div class="mix-photo-container">
           <div class="mix-photo">
             <img class="slideimages" src="./images/location4.jpeg" alt="Image1" />
@@ -223,6 +224,7 @@
             <span class="dot" onclick="currentSlide(3)"></span>
           </div>
         </div>
+<!-- DELIVERY-TAKE AWAY -->
         <div class="container choice-button-container">
           <div class="row choice-button-row">
             <div class="col delivery-button choice-button">
@@ -259,6 +261,7 @@
             </div>
           </div>
         </div>
+<!-- FOOTER -->
         <div class="footer-container">
           <footer id="footer" class="container">
             <div class="row footer-row-container">
