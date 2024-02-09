@@ -1043,6 +1043,7 @@ body.modal-open {
   justify-content: center;
   align-items: center;
   margin: 160px 0px 40px 0px;
+  width: 100%;
 }
 
 .hourelocation-container .title-hel-info-container{
@@ -1061,7 +1062,7 @@ body.modal-open {
   background-size: cover;
   background-position: center;
   position: absolute;
-  top: 0px;
+  top: -10px;
   right: 0px;
   bottom: 0px;
   left: 0px;
@@ -1090,7 +1091,6 @@ body.modal-open {
 }
 
 .hourelocation-container .body-hel-info-container .body-hel-row .hel-info-open {
-  max-width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1098,7 +1098,6 @@ body.modal-open {
 }
 
 .hourelocation-container .body-hel-info-container .body-hel-row .address-complete {
-  max-width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1133,6 +1132,82 @@ body.modal-open {
   min-height: 90%;
   min-width: 90%;
 }
+
+@media (min-width: 650px) and (max-width: 991px) {
+  .hourelocation-container .body-hel-info-container {
+    margin: 0px;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 649px) {
+  .hourelocation-container .body-hel-info-container .body-hel-row .hel-info-open .address-link a {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .hourelocation-container .body-hel-info-container .body-hel-row .hel-info-open .arrow-map-container {
+    height: 30%;
+    width: 30%;
+  }
+  .hourelocation-container .body-hel-info-container .body-hel-row .hel-info-open .info-opened h6 {
+    font-size: 17px;
+  }
+  .hourelocation-container .title-hel-info-container h2 {
+    font-size: 40px;
+  }
+  .hourelocation-container .title-hel-info-container {
+    margin-bottom: 0px;
+  }
+  .hourelocation-container .body-hel-info-container {
+    margin: 10px;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 449px) {
+  .hourelocation-container .body-hel-info-container .body-hel-row .hel-info-open .address-link a {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .hourelocation-container .body-hel-info-container .body-hel-row .hel-info-open .arrow-map-container {
+    height: 30%;
+    width: 30%;
+  }
+  .hourelocation-container .body-hel-info-container .body-hel-row .hel-info-open .info-opened h6 {
+    font-size: 15px;
+  }
+  .hourelocation-container .title-hel-info-container h2 {
+    font-size: 30px;
+  }
+  .hourelocation-container .title-hel-info-container {
+    margin-bottom: 0px;
+  }
+  .hourelocation-container .body-hel-info-container {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 349px) {
+  .hourelocation-container .body-hel-info-container .body-hel-row .hel-info-open .address-link a {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .hourelocation-container .body-hel-info-container .body-hel-row .hel-info-open .arrow-map-container {
+    display: none;
+  }
+  .hourelocation-container .body-hel-info-container .body-hel-row .hel-info-open .info-opened h6 {
+    font-size: 12px;
+    font-weight: 300;
+  }
+  .hourelocation-container .title-hel-info-container h2 {
+    font-size: 20px;
+  }
+  .hourelocation-container .title-hel-info-container {
+    margin-bottom: 5px;
+  }
+  .hourelocation-container .body-hel-info-container {
+    margin: 20px;
+  }
+}
+
 
 /* MENU PAGE */
 
