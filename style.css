@@ -281,9 +281,6 @@ body.modal-open {
 .content-restaurant-container .menu-index-container .row {
   display: flex;
   justify-content: center;
-}
-
-.content-restaurant-container .menu-index-container .row {
   margin: 0px 0px 0px 0px;
 }
 
@@ -619,7 +616,6 @@ body.modal-open {
     height: 400px;
     width: 60%;
   }
-
   .content-restaurant-container .menu-index-container .intro-menu-container {
     width: 80%;
   }
@@ -1610,25 +1606,21 @@ body.modal-open {
 
 .ourstory-experience-container {
   margin-bottom: 60px;
+  min-width: 100%;
+  padding: 0px 50px;
 }
 
 .ourstory-experience-container .row {
-  margin: 0px 0px 0px 0px;
-}
-
-.ourstory-experience-container .image-experience-container{
+  margin: 0px 15px;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
-
-.ourstory-experience-container .image-experience-container .image-experience img {
-  max-width: 100%;
-  max-height: 400px;
-  overflow: hidden;
-  display: block;
-  margin: auto;
+.ourstory-experience-container .image-experience-container{
+  background-image: url(./images/restaurant&food/cocktail.jpeg);
+  background-size: cover;
+  background-position: center;
+  margin: 40px 0px;
 }
 
 .ourstory-experience-container .experience-container .experience-title {
@@ -1638,8 +1630,6 @@ body.modal-open {
 }
 
 .ourstory-experience-container .experience-container{
-  width: auto;
-  height: fit-content;
   padding: 40px 80px;
   border-width: 50px;
   border-style: solid;
@@ -1718,9 +1708,177 @@ body.modal-open {
 }
 
 .review-our-story-container .review-container #prev-review-arrow{
-  left:180px;
+  left:380px;
 }
 
 .review-our-story-container .review-container #next-review-arrow{
-  right:180px;
+  right:380px;
+}
+@media (min-width: 1470px) and (max-width: 1670px) {
+  .review-our-story-container .review-container #prev-review-arrow{
+    left:280px;
+  }
+  
+  .review-our-story-container .review-container #next-review-arrow{
+    right:280px;
+  }
+}
+@media (min-width: 1270px) and (max-width: 1469px) {
+  .review-our-story-container .review-container #prev-review-arrow{
+    left:180px;
+  }
+  
+  .review-our-story-container .review-container #next-review-arrow{
+    right:180px;
+  }
+}
+@media (min-width: 780px) and (max-width: 1269px) {
+  .review-our-story-container .review-container #prev-review-arrow{
+    left:100px;
+  }
+  
+  .review-our-story-container .review-container #next-review-arrow{
+    right:100px;
+  }
+}
+@media (min-width: 780px) and (max-width: 1370px) {
+  .ourstory-experience-container .image-experience-container {
+    margin: 20px 40px;
+    height: 400px;
+    width: 60%;
+  }
+  .ourstory-experience-container .experience-container {
+    width: 80%;
+  }
+}
+@media (min-width: 530px) and (max-width: 779px) {
+  .ourstory-experience-container .image-experience-container {
+    margin: 20px 40px;
+    height: 400px;
+    width: 80%;
+  }
+  .ourstory-experience-container .experience-container {
+    width: 100%;
+    padding: 20px;
+    border-width: 30px;
+  }
+  .review-our-story-container .review-container #prev-review-arrow{
+    left:60px;
+  }
+  .review-our-story-container .review-container #next-review-arrow{
+    right:60px;
+  }
+  .review-our-story-container h2 {
+    font-size: 30px;
+  }
+  .review-our-story-container .review-container .body-review-container .author-review {
+    font-size: 15px;
+  }
+  .review-our-story-container .review-container .body-review-container .content-review {
+    font-size: 17px;
+  }
+}
+@media (min-width: 500px) and (max-width: 770px) {
+  .ourstory-container .body-ourstory-info-container .ourstory-info {
+    font-size: 20px;
+  }
+  .ourstory-container .body-ourstory-info-container {
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 400px) and (max-width: 529px) {
+  .ourstory-experience-container .image-experience-container {
+    margin: 40px 40px;
+    height: 300px;
+    width: 80%;
+  }
+  .ourstory-experience-container .experience-container {
+    width: 100%;
+    padding: 10px;
+    border-width: 15px;
+  }
+  .ourstory-experience-container {
+    padding: 0px 20px;
+  }
+  .review-our-story-container .review-container #prev-review-arrow{
+    left:40px;
+  }
+  .review-our-story-container .review-container #next-review-arrow{
+    right:40px;
+  }
+  .review-our-story-container h2 {
+    font-size: 25px;
+  }
+  .review-our-story-container .review-container .body-review-container .author-review {
+    font-size: 12px;
+  }
+  .review-our-story-container .review-container .body-review-container .content-review {
+    font-size: 15px;
+  }
+}
+@media (max-width: 500px) {
+  .ourstory-experience-container .experience-container .experience-title {
+    font-size: 22px;
+  }
+  .ourstory-experience-container .experience-container .experience-part {
+    font-size:13px;
+  }
+}
+@media (min-width: 350px) and (max-width: 499px) {
+  .ourstory-container .body-ourstory-info-container .ourstory-info {
+    font-size: 15px;
+    margin:10px 20px;
+    max-width: 70%;
+  }
+  .ourstory-container .body-ourstory-info-container {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 350px) and (max-width: 449px) {
+  .ourstory-container .title-ourstory-container h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 399px) {
+  .ourstory-experience-container .image-experience-container {
+    margin: 30px 30px;
+    height: 200px;
+    width: 80%;
+  }
+  .ourstory-experience-container .experience-container {
+    width: 100%;
+    padding: 30px;
+    border-width: 10px;
+  }
+  .ourstory-experience-container {
+    padding: 0px 10px;
+  }
+  .review-our-story-container .review-container #prev-review-arrow{
+    left:20px;
+  }
+  .review-our-story-container .review-container #next-review-arrow{
+    right:20px;
+  }
+  .review-our-story-container h2 {
+    font-size: 25px;
+  }
+  .review-our-story-container .review-container .body-review-container .author-review {
+    font-size: 11px;
+  }
+  .review-our-story-container .review-container .body-review-container .content-review {
+    font-size: 12px;
+  }
+}
+@media (max-width: 349px) {
+  .ourstory-container .title-ourstory-container h2 {
+    font-size: 20px;
+  }
+  .ourstory-container .body-ourstory-info-container .ourstory-info {
+    font-size: 12px;
+    margin:12px 40px;
+    max-width: 60%;
+  }
+  .ourstory-container .body-ourstory-info-container {
+    margin-bottom: 15px;
+  }
 }
