@@ -152,6 +152,7 @@
   margin: 0px;
   padding: 0px;
   min-width: 100vw;
+  height: 100%;
 }
 
 .body-container .content-restaurant-container .modal .modal-dialog .modal-content{
@@ -160,6 +161,7 @@
   text-align: center;
   color: var(--lightcolor);
   margin-bottom: 50px;
+  height: 100%;
 }
 
 .body-container .content-restaurant-container .modal .modal-dialog .modal-content h1{
@@ -347,15 +349,15 @@ body.modal-open {
 
 .content-restaurant-container .mix-photo-container .mix-photo {
   transition: transform 0.5s ease-in-out;
-  min-height: 50%;
-  max-width: 60%;
+  height: 500px;
+  width: 80%;
   overflow: hidden;
-
+  display: flex;
 }
 
 .content-restaurant-container .mix-photo-container .mix-photo img{
-  max-height: 100%;
-  max-width: 100%;
+  min-height: 100%;
+  min-width: 100%;
   object-fit: cover;
   display: none;
 }
@@ -384,11 +386,11 @@ body.modal-open {
 }
 
 .content-restaurant-container .mix-photo-container  #prev-arrow {
-  left: 200px;
+  left: 1px;
 }
 
 .content-restaurant-container .mix-photo-container  #next-arrow {
-  right: 200px;
+  right: 1px;
 }
 
 .content-restaurant-container .mix-photo-container .dot-container {
@@ -599,17 +601,21 @@ body.modal-open {
   z-index: 10;
   border-radius: 5px;
 }
-
-@media (min-width: 780px) and (max-width: 1370px) {
+@media (min-width: 140px) {
+  .body-container .content-restaurant-container .modal .modal-dialog .modal-button .close-modal {
+    right: 90px;
+  }
+}
+@media (min-width: 780px) and (max-width: 1375px) {
   .content-restaurant-container .mix-photo-container #next-arrow {
-    right: 100px;
+    right: 10px;
   }
   .content-restaurant-container .mix-photo-container #prev-arrow {
-    left: 100px
+    left: 10px
   }
   .content-restaurant-container .mix-photo-container #prev-arrow,
   .content-restaurant-container .mix-photo-container #next-arrow {
-    top:150px;
+    top:200px;
   }
   .content-restaurant-container .menu-index-container .image-menu-container {
     margin: 20px 40px;
@@ -620,7 +626,12 @@ body.modal-open {
     width: 80%;
   }
 }
-
+@media (min-width: 931px) and (max-width: 1179px) {
+  .content-restaurant-container .mix-photo-container .mix-photo {
+    width: 70%;
+    height: 400px;
+  }
+}
 @media (min-width: 931px) and (max-width: 1370px) {
   .content-restaurant-container .choice-button-container .choice-button-row {
     width: 70%;
@@ -644,7 +655,7 @@ body.modal-open {
 
   .content-restaurant-container .mix-photo-container #prev-arrow,
   .content-restaurant-container .mix-photo-container #next-arrow {
-    top:100px;
+    top:160px;
   }
 
   .content-restaurant-container .identity-container .slogan-container .item-slogan p {
@@ -665,6 +676,10 @@ body.modal-open {
   }
   .content-restaurant-container .choice-button-container .choice-button-row .takeaway-button {
     margin-left: 10px;
+  }
+  .content-restaurant-container .mix-photo-container .mix-photo {
+    width: 60%;
+    height: 300px;
   }
 }
 
@@ -716,13 +731,17 @@ body.modal-open {
 
   .content-restaurant-container .mix-photo-container #prev-arrow,
   .content-restaurant-container .mix-photo-container #next-arrow {
-    top:60px;
+    top:100px;
   }
   .content-restaurant-container .choice-button-container .choice-button-row .delivery-button {
     margin-right: 0px;
   }
   .content-restaurant-container .choice-button-container .choice-button-row .takeaway-button {
     margin-left: 0px;
+  }
+  .content-restaurant-container .mix-photo-container .mix-photo {
+    width: 60%;
+    height: 250px;
   }
 }
 
@@ -760,10 +779,10 @@ body.modal-open {
 
 @media (min-width: 400px) and (max-width: 529px) {
   .content-restaurant-container .mix-photo-container #next-arrow {
-    right: 35px;
+    right: 45px;
   }
   .content-restaurant-container .mix-photo-container #prev-arrow {
-    left: 35px
+    left: 45px;
   }
   .content-restaurant-container .identity-container .slogan-container .item-slogan p {
     font-size: 15px;
@@ -806,14 +825,14 @@ body.modal-open {
 
 @media (max-width: 399px) {
   .content-restaurant-container .mix-photo-container #next-arrow {
-    right: 5px;
+    right: 45px;
   }
   .content-restaurant-container .mix-photo-container #prev-arrow {
-    left: 5px
+    left: 45px
   }
   .content-restaurant-container .mix-photo-container #prev-arrow,
   .content-restaurant-container .mix-photo-container #next-arrow {
-    top:20px;
+    top:70px;
   }
   .content-restaurant-container .identity-container .slogan-container .item-slogan p {
     font-size: 10px;
@@ -825,12 +844,10 @@ body.modal-open {
   .content-restaurant-container .identity-container .slogan-container .dot-slogan-container {
     display: none;
   }
-
   .logo-identity {
     max-height: 60%;
     max-width: 60%;
   }
-
   .logo-identity img {
     max-height: 100%;
     max-width: 100%;
@@ -840,13 +857,11 @@ body.modal-open {
     height: 300px;
     width: 80%;
   }
-
   .content-restaurant-container .menu-index-container .intro-menu-container {
     width: 100%;
     padding: 50px;
     border-width: 10px;
   }
-
   .content-restaurant-container .menu-index-container {
     padding: 0px 10px;
   }
@@ -855,6 +870,10 @@ body.modal-open {
   }
   .content-restaurant-container .choice-button-container .choice-button-row .takeaway-button {
     margin-left: 0px;
+  }
+  .content-restaurant-container .mix-photo-container .mix-photo {
+    width: 40%;
+    height: 200px;
   }
   
 }
