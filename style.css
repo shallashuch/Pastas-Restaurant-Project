@@ -1241,7 +1241,7 @@ body.modal-open {
   background-size: cover;
   background-position: center;
   position: absolute;
-  top: 0px;
+  top: -10px;
   right: 0px;
   bottom: 0px;
   left: 0px;
@@ -1358,12 +1358,25 @@ body.modal-open {
   justify-content: center;
 }
 
+
+.menu-container .photo-menu-container .photo-menu-row-container .col-photo-container{
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+}
+
+.menu-container .photo-menu-container .photo-menu-row-container .col-photo-container.twophotocol {
+  flex-direction: column;
+  align-items: center;
+}
+
 .menu-container .photo-menu-container .photo-menu-row-container .col-photo-container .photo-row-container {
   width: 100%;
   height: 300px;
   overflow: hidden;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .menu-container .photo-menu-container .photo-menu-row-container .col-photo-container .photo-doublerow-container {
@@ -1402,15 +1415,145 @@ body.modal-open {
   transform:scale(2);
 }
 
+@media (min-width: 900px) and (max-width: 1400px) {
+  .menu-container .body-menu-pasta-container .menu-choice-buttons-container,
+  .menu-container .body-menu-wine-container .menu-choice-buttons-container {
+    width: 40%;
+  }
+}
+@media (min-width: 500px) and (max-width: 1199px) {
+  .menu-container .body-menu-pasta-container .menu-pastas-container .menu-pastas-title,
+  .menu-container .body-menu-wine-container .menu-wine-container .menu-wine-title {
+    font-size: 25px;
+  }
+  .menu-container .body-menu-pasta-container .menu-pastas-container .menu-typeofpasta-container .typeofpasta-container .pasta-title-container,
+  .menu-container .body-menu-wine-container .menu-wine-container .menu-typeofwine-container .typeofwine-container .wine-title-container {
+    font-size: 18px;
+  }
+  .menu-container .body-menu-pasta-container .menu-pastas-container .menu-typeofpasta-container .typeofpasta-container .pasta-ingredients-container {
+    font-size: 13px;
+  }
+}
 @media (min-width: 500px) and (max-width: 991px) {
   .menu-container .photo-menu-container .photo-menu-row-container .col-photo-container .photo-doublerow-container {
     height: 400px;
+  }
+}
+@media (min-width: 650px) and (max-width: 899px) {
+  .menu-container .body-menu-pasta-container .menu-choice-buttons-container,
+  .menu-container .body-menu-wine-container .menu-choice-buttons-container {
+    width: 50%;
+  }
+}
+@media (max-width: 770px) {
+  .menu-container .photo-menu-container {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 500px) and (max-width: 770px) {
+  .menu-container .photo-menu-container .photo-menu-row-container {
+    width: 80%;
+  }
+  .menu-container .photo-menu-container .photo-menu-row-container .col-photo-container .photo-row-container img {
+    height: 80%;
+  }
+  .menu-container .photo-menu-container .photo-menu-row-container .col-photo-container .photo-doublerow-container {
+    height: 300px;
+  }
+}
+@media (max-width: 649px) {
+  .active-menu-button,
+  .inactive-menu-button  {
+    font-weight: 500;
+    padding: 5px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 649px) {
+  .menu-container .body-menu-pasta-container .menu-choice-buttons-container,
+  .menu-container .body-menu-wine-container .menu-choice-buttons-container {
+    width: 60%;
+  }
+  .menu-container {
+   margin-bottom: 60px; 
   }
 }
 @media (max-width: 499px) {
   .menu-container .photo-menu-container .photo-menu-row-container .col-photo-container .photo-doublerow-container {
     height: 300px;
   }
+  .menu-container .body-menu-pasta-container .menu-pastas-container .menu-pastas-title,
+  .menu-container .body-menu-wine-container .menu-wine-container .menu-wine-title {
+    font-size: 20px;
+  }
+  .menu-container .body-menu-pasta-container .menu-pastas-container .menu-typeofpasta-container .typeofpasta-container,
+  .menu-container .body-menu-wine-container .menu-wine-container .menu-typeofwine-container .typeofwine-container {
+    margin-bottom: 20px;
+  }
+  .menu-container .body-menu-pasta-container .menu-pastas-container .menu-typeofpasta-container .typeofpasta-container .pasta-title-container,
+  .menu-container .body-menu-wine-container .menu-wine-container .menu-typeofwine-container .typeofwine-container .wine-title-container {
+    font-size: 15px;
+  }
+  .menu-container .body-menu-pasta-container .menu-pastas-container .menu-typeofpasta-container .typeofpasta-container .pasta-ingredients-container {
+    font-size: 11px;
+  }
+
+  .menu-container .body-menu-pasta-container .menu-pastas-container .menu-typeofpasta-container,
+  .menu-container .body-menu-wine-container .menu-wine-container .menu-typeofwine-container {
+    margin-top: 25px;
+  }
+  .menu-container .photo-menu-container {
+    margin-top: 0px;
+  }
+}
+@media (min-width: 350px) and (max-width: 449px) {
+  .menu-container .title-menu-container h2 {
+    font-size: 30px;
+  }
+  .menu-container .body-menu-pasta-container .menu-choice-buttons-container,
+  .menu-container .body-menu-wine-container .menu-choice-buttons-container {
+    width: 80%;
+  }
+  .menu-container .photo-menu-container .photo-menu-row-container {
+    width: 60%;
+  }
+  .menu-container .photo-menu-container .photo-menu-row-container .col-photo-container .photo-row-container img {
+    height: 70%;
+  }
+  .menu-container .photo-menu-container .photo-menu-row-container .col-photo-container .photo-doublerow-container {
+    height: 200px;
+  }
+  .menu-container {
+    margin-bottom: 30px; 
+   }
+}
+@media (max-width: 349px) {
+  .menu-container .title-menu-container h2 {
+    font-size: 20px;
+  }
+  .menu-container .body-menu-pasta-container .menu-choice-buttons-container,
+  .menu-container .body-menu-wine-container .menu-choice-buttons-container {
+    width: 90%;
+  }
+  .menu-container .body-menu-pasta-container .menu-choice-buttons-container,
+  .menu-container .body-menu-wine-container .menu-choice-buttons-container {
+    width: 80%;
+  }
+  .menu-container .photo-menu-container .photo-menu-row-container {
+    width: 85%;
+  }
+  .menu-container .photo-menu-container .photo-menu-row-container .col-photo-container .photo-row-container img {
+    height: 60%;
+  }
+  .menu-container .photo-menu-container .photo-menu-row-container .col-photo-container .photo-doublerow-container {
+    height: 150px;
+  }
+  .menu-container {
+    margin-bottom: 15px; 
+   }
 }
 
 /* OUR STORY */
@@ -1437,7 +1580,7 @@ body.modal-open {
   background-size: cover;
   background-position: center;
   position: absolute;
-  top: 0px;
+  top: -10px;
   right: 0px;
   bottom: 0px;
   left: 0px;
