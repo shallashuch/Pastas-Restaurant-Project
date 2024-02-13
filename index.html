@@ -197,7 +197,7 @@
         </div>
         <!-- DELIVERY-TAKE AWAY -->
         <div class="container choice-button-container">
-          <div class="row choice-button-row">
+          <div id="container-initial-button" class="row choice-button-row">
             <div class="col delivery-button choice-button">
               <div class="delivery" onclick="showPaper(delivery)">DELIVERY</div>
               <div class="square-button"></div>
@@ -207,7 +207,58 @@
               <div class="square-opposite-button"></div>
             </div>
           </div>
-          <div class="paper-container">
+          <div id="delivery-container" class="paper-container">
+            <div class="row choice-button-row-split">
+              <div class="col delivery-button choice-button">
+                <div class="delivery" onclick="showPaper(delivery)">DELIVERY</div>
+                <div class="square-button"></div>
+              </div>
+              <div class="col takeaway-button choice-button">
+                <div class="takeaway" onclick="showPaper(takeaway)">TAKE AWAY</div>
+                <div class="square-opposite-button"></div>
+              </div>
+            </div>
+            <button class="close-paper-button" onclick="closePaper()">X</button>
+            <img id="paper-button" src="./images/element/paper.png" alt="Paper">
+            <div class="text-paper-container-delivery">
+              <p>Available from</p>
+              <span>12AM - 6PM</span>
+              <p>Call us: <span>+310563782542</span></p>
+              <p id="del-app">Delivery application:</p>
+              <div class="delivery-application-container">
+                <div><a href="https://www.thuisbezorgd.nl/" target="_blank"><img src="./images/icon-food/justeat.png" alt="Thuisbezorgd logo"></a></div>
+                <div><a href="https://www.toogoodtogo.com/nl" target="_blank"><img src="./images/icon-food/toogoodtogo.png" alt="TooGoodToGo logo"></a></div>
+                <div><a href="https://www.ubereats.com/nl" target="_blank"><img src="./images/icon-food/ubereats.png" alt="Uber Eats logo"></a></div>
+              </div>
+            </div>
+          </div>
+          <div id="takeaway-container" class="paper-container">
+            <div class="row choice-button-row-split">
+              <div class="col delivery-button choice-button">
+                <div class="delivery" onclick="showPaper(delivery)">DELIVERY</div>
+                <div class="square-button"></div>
+              </div>
+              <div class="col takeaway-button choice-button">
+                <div class="takeaway" onclick="showPaper(takeaway)">TAKE AWAY</div>
+                <div class="square-opposite-button"></div>
+              </div>
+            </div>
+            <button class="close-paper-button" onclick="closePaper()">X</button>
+            <img id="paper-button" src="./images/element/paper.png" alt="Paper">
+            <div class="text-paper-container-takeaway">
+              <p>Available from</p>
+              <span>11AM - 8PM</span>
+              <p>Call us: <span>+310563782542</span></p>
+              <p id="checkmenu">Check our menu:</p>
+              <div class="takeaway-checkmenu-container">
+                <a href="./menu.html"><button>OUR MENU</button></a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- <div class="paper-container">
             <button class="close-paper-button" onclick="closePaper()">X</button>
             <img id="paper-button" src="./images/element/paper.png" alt="Paper">
             <div class="text-paper-container-delivery">
@@ -230,7 +281,8 @@
                 <a href="./menu.html"><button>OUR MENU</button></a>
               </div>
             </div>
-          </div>
+          </div> -->
+
         </div>
         <!-- FOOTER -->
         <div class="footer-container">

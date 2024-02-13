@@ -417,25 +417,36 @@ body.modal-open {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
+  margin:0px 0px 100px 0px;
   position: relative;
+  width: 100vw;
 }
 
 .content-restaurant-container .choice-button-container .choice-button-row {
   width: 40%;
+}
+.content-restaurant-container .choice-button-container .choice-button-row-split {
+  margin-right: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.content-restaurant-container .choice-button-container #container-initial-button.initialbtn-nodisplay {
+  display:none;
 }
 
 .content-restaurant-container .choice-button-container .choice-button-row .takeaway-button,
 .content-restaurant-container .choice-button-container .choice-button-row .delivery-button {
   position: relative;
   padding: 20px;
+  margin: 0px;
 }
 
-.content-restaurant-container .choice-button-container .choice-button-row .takeaway-button {
+.content-restaurant-container .choice-button-container #container-initial-button .takeaway-button {
   margin-left: 50px;
 }
 
-.content-restaurant-container .choice-button-container .choice-button-row .delivery-button {
+.content-restaurant-container .choice-button-container #container-initial-button .delivery-button {
   margin-right: 50px;
 }
 
@@ -447,7 +458,8 @@ body.modal-open {
 }
 
 .content-restaurant-container .choice-button-container .paper-container.display-container{
-  display: block;
+  display: flex;
+  width: 100%;
 }
 
 .content-restaurant-container .choice-button-container .paper-container .close-paper-button {
@@ -483,7 +495,7 @@ body.modal-open {
 .content-restaurant-container .choice-button-container .paper-container .text-paper-container-takeaway {
   position: absolute;
   top: 60px;
-  left:120px;
+  left:410px;
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -535,7 +547,9 @@ body.modal-open {
 }
 
 .content-restaurant-container .choice-button-container .choice-button-row .delivery-button .delivery,
-.content-restaurant-container .choice-button-container .choice-button-row .takeaway-button .takeaway {
+.content-restaurant-container .choice-button-container .choice-button-row .takeaway-button .takeaway,
+.content-restaurant-container .choice-button-container .choice-button-row-split .delivery-button .delivery,
+.content-restaurant-container .choice-button-container .choice-button-row-split .takeaway-button .takeaway {
   border: 2px solid var(--darkcolor);
   padding: 30px;
   display: flex;
@@ -566,13 +580,15 @@ body.modal-open {
 }
 
 .content-restaurant-container .choice-button-container .choice-button-row .delivery-button .delivery:hover,
-.content-restaurant-container .choice-button-container .choice-button-row .takeaway-button .takeaway:hover {
+.content-restaurant-container .choice-button-container .choice-button-row .takeaway-button .takeaway:hover,
+.content-restaurant-container .choice-button-container .choice-button-row-split .delivery-button .delivery:hover,
+.content-restaurant-container .choice-button-container .choice-button-row-split .takeaway-button .takeaway:hover {
   background-color: var(--darkcolor);
   color: var(--middlecolor);
   font-size: 18px;
 }
 
-.content-restaurant-container .choice-button-container .choice-button-row .square-button {
+.content-restaurant-container .choice-button-container .choice-button-row .square-button{
   position: absolute;
   top: 3px;
   right:10px;
@@ -585,17 +601,43 @@ body.modal-open {
   transition: transform 0.5s ease-in-out;
 }
 
+.content-restaurant-container .choice-button-container .choice-button-row-split .square-button {
+  position: absolute;
+  top: 40px;
+  left:10px;
+  width:240px;
+  height: 90px;
+  border: 2px solid var(--specificthingscolor);
+  background-color: var(--middlecolor);
+  z-index: 10;
+  border-radius: 5px;
+  transition: transform 0.5s ease-in-out;
+}
+
 .content-restaurant-container .choice-button-container .choice-button-row .square-button:hover,
-.content-restaurant-container .choice-button-container .choice-button-row .square-opposite-button:hover{
+.content-restaurant-container .choice-button-container .choice-button-row .square-opposite-button:hover,
+.content-restaurant-container .choice-button-container .choice-button-row-split .square-button:hover,
+.content-restaurant-container .choice-button-container .choice-button-row-split .square-opposite-button:hover{
   background-color: #B31312;
 }
 
-.content-restaurant-container .choice-button-container .choice-button-row .square-opposite-button {
+.content-restaurant-container .choice-button-container .choice-button-row .square-opposite-button {  
   bottom: 3px;
   left:10px;
   position: absolute;
   width:200px;
   height: 80px;
+  border: 2px solid var(--specificthingscolor);
+  background-color: var(--middlecolor);
+  z-index: 10;
+  border-radius: 5px;
+}
+.content-restaurant-container .choice-button-container .choice-button-row-split .square-opposite-button {
+  bottom: 40px;
+  left:10px;
+  position: absolute;
+  width:240px;
+  height: 90px;
   border: 2px solid var(--specificthingscolor);
   background-color: var(--middlecolor);
   z-index: 10;
