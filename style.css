@@ -372,6 +372,7 @@ body.modal-open {
 
 .content-restaurant-container .menu-index-container .intro-menu-container .intro-button-container a {
   text-decoration: none;
+  color: var(--darkcolor);
 }
 
 .content-restaurant-container .menu-index-container .intro-menu-container .intro-button-container .intro-button:hover {
@@ -942,18 +943,17 @@ body.modal-open {
     height: 10px;
     width: 10px;
   }
+  .content-restaurant-container .choice-button-container #container-initial-button .delivery-button {
+    margin-right: 0px;
+  }
+  .content-restaurant-container .choice-button-container #container-initial-button .takeaway-button {
+    margin-left: 0px;
+  }
 }
 @media (min-width: 400px) and (max-width: 599px) {
-
   .content-restaurant-container .mix-photo-container #prev-arrow,
   .content-restaurant-container .mix-photo-container #next-arrow {
     top:100px;
-  }
-  .content-restaurant-container .choice-button-container .choice-button-row .delivery-button {
-    margin-right: 0px;
-  }
-  .content-restaurant-container .choice-button-container .choice-button-row .takeaway-button {
-    margin-left: 0px;
   }
   .content-restaurant-container .mix-photo-container .mix-photo {
     width: 60%;
