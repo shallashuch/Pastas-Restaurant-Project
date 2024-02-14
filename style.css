@@ -598,12 +598,12 @@ body.modal-open {
   display: flex;
   justify-content:center;
   align-items: center;
-  background-color: var(--lightcolor);
+  background-color: var(--darkcolor);
+  color: var(--middlecolor);
   font-weight: 700;
   position: relative;
   z-index: 999;
   border-radius: 5px;
-  transition: transform 1000s ease-in;
 }
 
 .delivery-transitioned {
@@ -626,66 +626,10 @@ body.modal-open {
 .content-restaurant-container .choice-button-container .choice-button-row .takeaway-button .takeaway:hover,
 .content-restaurant-container .choice-button-container .choice-button-row-split .delivery-button .delivery:hover,
 .content-restaurant-container .choice-button-container .choice-button-row-split .takeaway-button .takeaway:hover {
-  background-color: var(--darkcolor);
-  color: var(--middlecolor);
-  font-size: 18px;
+  background-color: var(--specificthingscolor);
+  color: var(--lightcolor);
 }
 
-.content-restaurant-container .choice-button-container .choice-button-row .square-button{
-  position: absolute;
-  top: 3px;
-  right:10px;
-  width:200px;
-  height: 80px;
-  border: 2px solid var(--specificthingscolor);
-  background-color: var(--middlecolor);
-  z-index: 10;
-  border-radius: 5px;
-  transition: transform 0.5s ease-in-out;
-}
-
-.content-restaurant-container .choice-button-container .choice-button-row-split .square-button {
-  position: absolute;
-  top: 40px;
-  left:10px;
-  width:240px;
-  height: 90px;
-  border: 2px solid var(--specificthingscolor);
-  background-color: var(--middlecolor);
-  z-index: 10;
-  border-radius: 5px;
-  transition: transform 0.5s ease-in-out;
-}
-
-.content-restaurant-container .choice-button-container .choice-button-row .square-button:hover,
-.content-restaurant-container .choice-button-container .choice-button-row .square-opposite-button:hover,
-.content-restaurant-container .choice-button-container .choice-button-row-split .square-button:hover,
-.content-restaurant-container .choice-button-container .choice-button-row-split .square-opposite-button:hover{
-  background-color: #B31312;
-}
-
-.content-restaurant-container .choice-button-container .choice-button-row .square-opposite-button {  
-  bottom: 3px;
-  left:10px;
-  position: absolute;
-  width:200px;
-  height: 80px;
-  border: 2px solid var(--specificthingscolor);
-  background-color: var(--middlecolor);
-  z-index: 10;
-  border-radius: 5px;
-}
-.content-restaurant-container .choice-button-container .choice-button-row-split .square-opposite-button {
-  bottom: 40px;
-  left:10px;
-  position: absolute;
-  width:240px;
-  height: 90px;
-  border: 2px solid var(--specificthingscolor);
-  background-color: var(--middlecolor);
-  z-index: 10;
-  border-radius: 5px;
-}
 @media (min-width: 1400px) and (max-width: 1515px) {
   .content-restaurant-container .choice-button-container .paper-container {
     margin:0px 80px ;
@@ -696,16 +640,18 @@ body.modal-open {
     right: 90px;
   }
 }
+@media (min-width: 1180px) and (max-width: 1375px) {
+  .content-restaurant-container .mix-photo-container #prev-arrow,
+  .content-restaurant-container .mix-photo-container #next-arrow {
+    top:250px;
+  }
+}
 @media (min-width: 780px) and (max-width: 1375px) {
   .content-restaurant-container .mix-photo-container #next-arrow {
     right: 10px;
   }
   .content-restaurant-container .mix-photo-container #prev-arrow {
     left: 10px
-  }
-  .content-restaurant-container .mix-photo-container #prev-arrow,
-  .content-restaurant-container .mix-photo-container #next-arrow {
-    top:200px;
   }
   .content-restaurant-container .menu-index-container .image-menu-container {
     margin: 20px 40px;
@@ -729,10 +675,6 @@ body.modal-open {
   .content-restaurant-container .choice-button-container .paper-container .text-paper-container-takeaway {
     left:310px;
   }
-  .content-restaurant-container .choice-button-container .choice-button-row-split .square-button,
-  .content-restaurant-container .choice-button-container .choice-button-row-split .square-opposite-button {
-    width: 220px;
-  }
 }
 @media (max-width: 1250px) {
   .body-container .content-restaurant-container .navbar #logoPastas {
@@ -751,23 +693,22 @@ body.modal-open {
     width: 70%;
     height: 400px;
   }
+  .content-restaurant-container .mix-photo-container #prev-arrow,
+  .content-restaurant-container .mix-photo-container #next-arrow {
+    top:200px;
+  }
 }
 @media (min-width: 815px) and (max-width: 991px) {
   .content-restaurant-container .choice-button-container .paper-container .text-paper-container-delivery,
   .content-restaurant-container .choice-button-container .paper-container .text-paper-container-takeaway {
     left:250px;
   }
-  .content-restaurant-container .choice-button-container .choice-button-row-split .square-button,
-  .content-restaurant-container .choice-button-container .choice-button-row-split .square-opposite-button {
-    width: 190px;
-  }
 }
 @media (min-width: 790px) and (max-width: 930px) {
   .content-restaurant-container .mix-photo-container #prev-arrow,
   .content-restaurant-container .mix-photo-container #next-arrow {
-    top:160px;
+    top:120px;
   }
-
   .content-restaurant-container .identity-container .slogan-container .item-slogan p {
     font-size: 25px;
     font-weight: 600;
@@ -811,12 +752,8 @@ body.modal-open {
   .content-restaurant-container .choice-button-container .paper-container {
     margin:0px 30px ;
   }
-  .content-restaurant-container .choice-button-container .choice-button-row-split .square-button,
-  .content-restaurant-container .choice-button-container .choice-button-row-split .square-opposite-button {
-    width: 190px;
-  }
 }
-@media (min-width: 530px) and (max-width: 779px) {
+@media (min-width: 530px) and (max-width: 789px) {
   .content-restaurant-container .mix-photo-container #next-arrow {
     right: 60px;
   }
@@ -825,7 +762,7 @@ body.modal-open {
   }
   .content-restaurant-container .mix-photo-container #prev-arrow,
   .content-restaurant-container .mix-photo-container #next-arrow {
-    top:100px;
+    top:120px;
   }
   .content-restaurant-container .identity-container .slogan-container .item-slogan {
     margin:2px;
@@ -861,18 +798,6 @@ body.modal-open {
     padding: 20px;
     font-size: 14px;
   }
-  .content-restaurant-container .choice-button-container .choice-button-row-split .square-button,
-  .content-restaurant-container .choice-button-container .choice-button-row-split .square-opposite-button {
-    width: 120px;
-    height: 70px;
-  }
-  .content-restaurant-container .choice-button-container .choice-button-row-split .square-button {
-    top: 50px;
-  }
-  .content-restaurant-container .choice-button-container .choice-button-row-split .square-opposite-button {
-    left: 10px;
-    bottom: 50px;
-  }
   .content-restaurant-container .choice-button-container .paper-container .text-paper-container-takeaway,
   .content-restaurant-container .choice-button-container .paper-container .text-paper-container-delivery {
     left:200px;
@@ -880,20 +805,6 @@ body.modal-open {
   .content-restaurant-container .choice-button-container .paper-container #paper-button {
     height: 90%;
     width: 80%;
-  }
-}
-@media (min-width: 715px) and (max-width: 766px) {
-  .content-restaurant-container .choice-button-container .choice-button-row-split .square-button {
-    top: 50px;
-  }
-  .content-restaurant-container .choice-button-container .choice-button-row-split .square-opposite-button {
-    left: 10px;
-    bottom: 50px;
-  }
-  .content-restaurant-container .choice-button-container .choice-button-row-split .square-button,
-  .content-restaurant-container .choice-button-container .choice-button-row-split .square-opposite-button {
-    width: 160px;
-    height: 70px;
   }
 }
 @media (max-width: 664px) {
@@ -912,18 +823,6 @@ body.modal-open {
   .content-restaurant-container .choice-button-container .choice-button-row-split {
     width: 80%;
     margin: 0px 0px 50px 0px;
-  }
-  .content-restaurant-container .choice-button-container .choice-button-row-split .square-button {
-    top: 20px;
-    left:45px;
-    height: 40px;
-    width: 150px;
-  }
-  .content-restaurant-container .choice-button-container .choice-button-row-split .square-opposite-button {
-    left: 240px;
-    top: 20px;
-    height: 40px;
-    width: 150px;
   }
   .content-restaurant-container .choice-button-container .paper-container .text-paper-container-takeaway,
   .content-restaurant-container .choice-button-container .paper-container .text-paper-container-delivery {
@@ -959,14 +858,14 @@ body.modal-open {
     width: 60%;
     height: 250px;
   }
-}
-@media (min-width: 400px) and (max-width: 529px) {
   .content-restaurant-container .mix-photo-container #next-arrow {
     right: 45px;
   }
   .content-restaurant-container .mix-photo-container #prev-arrow {
-    left: 45px;
+    left: 45px
   }
+}
+@media (min-width: 400px) and (max-width: 529px) {
   .content-restaurant-container .identity-container .slogan-container .item-slogan p {
     font-size: 15px;
     font-weight:400;
@@ -1002,18 +901,6 @@ body.modal-open {
     width: 90%;
     margin: 0px 0px 50px 0px;
   }
-  .content-restaurant-container .choice-button-container .choice-button-row-split .square-button {
-    top: 10px;
-    left:45px;
-    height: 40px;
-    width: 110px;
-  }
-  .content-restaurant-container .choice-button-container .choice-button-row-split .square-opposite-button {
-    left: 190px;
-    top: 10px;
-    height: 40px;
-    width: 110px;
-  }
   .content-restaurant-container .choice-button-container .paper-container .text-paper-container-takeaway,
   .content-restaurant-container .choice-button-container .paper-container .text-paper-container-delivery {
     top:140px;
@@ -1029,10 +916,6 @@ body.modal-open {
   }
 }
 @media (max-width: 500px) {
-  .content-restaurant-container .choice-button-container .choice-button-row .square-button,
-  .content-restaurant-container .choice-button-container .choice-button-row .square-opposite-button {
-    width: 100px;
-  }
   .content-restaurant-container .identity-container {
     padding: 0px;
   }
@@ -1061,17 +944,6 @@ body.modal-open {
 @media (min-width: 400px) and (max-width: 440px) {
   .content-restaurant-container .identity-container .slogan-container .item-slogan p {
     font-size: 13px;
-  }
-}
-@media (min-width: 305px) and (max-width: 416px) {
-  .content-restaurant-container .choice-button-container .choice-button-row-split .square-button,
-  .content-restaurant-container .choice-button-container .choice-button-row-split .square-opposite-button {
-    width: 70px;
-    height: 40px;
-  }
-  .content-restaurant-container .choice-button-container .choice-button-row-split .square-button {
-    top: 10px;
-    left:65px;
   }
 }
 @media (max-width: 399px) {
