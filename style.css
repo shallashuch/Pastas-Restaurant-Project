@@ -377,8 +377,9 @@ body.modal-open {
 }
 
 .content-restaurant-container .menu-index-container .intro-menu-container .intro-button-container a {
-  text-decoration: none !important;;
-  color: var(--darkcolor) !important;
+  text-decoration: none;
+  color: var(--darkcolor);
+  -webkit-appearance: none;
 }
 
 .content-restaurant-container .menu-index-container .intro-menu-container .intro-button-container .intro-button:hover {
