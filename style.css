@@ -374,6 +374,7 @@ body.modal-open {
   font-weight: 700;
   border: 2px solid var(--darkcolor);
   border-radius: 5px;
+  -webkit-appearance: none;
 }
 
 .content-restaurant-container .menu-index-container .intro-menu-container .intro-button-container a {
@@ -385,6 +386,7 @@ body.modal-open {
 .content-restaurant-container .menu-index-container .intro-menu-container .intro-button-container .intro-button:hover {
   background-color: var(--darkcolor);
   color: var(--middlecolor);
+  -webkit-appearance: none;
 }
 
 .content-restaurant-container .mix-photo-container {
