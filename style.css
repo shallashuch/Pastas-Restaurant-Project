@@ -646,7 +646,7 @@ body.modal-open {
 }
 @media (min-width: 1400px) {
   .body-container .content-restaurant-container .modal .modal-dialog .modal-button .close-modal {
-    right: 90px;
+    right: 120px;
   }
 }
 @media (min-width: 1180px) and (max-width: 1375px) {
@@ -868,10 +868,10 @@ body.modal-open {
     height: 250px;
   }
   .content-restaurant-container .mix-photo-container #next-arrow {
-    right: 45px;
+    right: 35px;
   }
   .content-restaurant-container .mix-photo-container #prev-arrow {
-    left: 45px
+    left: 35px
   }
 }
 @media (min-width: 400px) and (max-width: 529px) {
