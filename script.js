@@ -77,6 +77,10 @@ function nextSlide() {
   showSlide(slideIndex);
 }
  
+function currentSlide(index) {
+  slideIndex = index - 1;
+  showSlide(slideIndex);
+}
 
 // SHOW BUTTON DELIVERY-TAKEAWAY CONTENT -HOMEPAGE
 const containerBtn = document.getElementById('container-initial-button');
