@@ -1,31 +1,28 @@
 // SCROLLING NAVBAR
 
 window.addEventListener('scroll', function() {
-  let navbar = document.querySelector('.navbar-collapse');
-  let logo = document.getElementById('logoPastas');
-  let reservationBtn = document.querySelector('.reservation-button');
-  let hamburgerMenu = document.querySelector('.navbar-toggler');
+  const threshold = 50;
+  const elementsToToggle = [
+    { element: document.querySelector('.navbar-collapse'), className: 'activescroll' },
+    { element: document.getElementById('logoPastas'), className: 'activescroll-logo' },
+    { element: document.querySelector('.reservation-button'), className: 'activescroll-btn' },
+    { element: document.querySelector('.navbar-toggler'), className: 'activescroll-hamburger' }
+  ];
 
-  navbar.classList.toggle("activescroll", window.scrollY > 50);
-  logo.classList.toggle("activescroll-logo", window.scrollY > 50);
-  reservationBtn.classList.toggle("activescroll-btn", window.scrollY > 50);
-  hamburgerMenu.classList.toggle("activescroll-hamburger", window.scrollY > 50);
+  elementsToToggle.forEach(({ element, className }) => {
+    element.classList.toggle(className, window.scrollY > threshold);
+  });
 });
+
 
 // MODALS
 
 const modal = document.getElementById('reservationModal')
 
-function renderModal() {
-  modal.classList.remove('hidden-modal');
-  modal.classList.add('display-modal');
-  document.body.classList.add('modal-open');
-}
-
-function closeModal() {
-  modal.classList.remove('display-modal');
-  modal.classList.add('hidden-modal');
-  document.body.classList.remove('modal-open');
+function toggleModal() {
+  modal.classList.toggle('hidden-modal');
+  modal.classList.toggle('display-modal');
+  document.body.classList.toggle('modal-open');
 }
 
 function thankyouMessage() {
